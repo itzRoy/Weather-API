@@ -7,7 +7,8 @@ import React, { Component } from "react";
 import "./App.css";
 import MySearch from "./components/MySearch";
 import Main from "./components/mainW";
-import Day from "./components/dayW";
+
+import Card from "./components/dayW"
 
 
 //images
@@ -33,9 +34,20 @@ class App extends Component {
         <div className="siteWrapper">
           <MySearch/>
           
-          <Main/>
+          <Main src={clear} temp={10} temp2={11} hum={78} pres={100484}></Main>
+          <section>
+                <div className="cardsContainer">
+                  <Card time="03:00" img={partlycloudy} deg="8"></Card>
+                  <Card time="06:00" img={partlycloudy} deg="9"></Card>
+                  <Card time="09:00" img={clear} deg="14"></Card>
+                  <Card time="12:00" img={clear} deg="17"></Card>
+                  <Card time="15:00" img={clear} deg="18"></Card>
+                  <Card time="18:00" img={clear} deg="16"></Card>
+                  <Card time="21:00" img={partlycloudy} deg="13"></Card>
 
-          <Day/>
+                </div>
+          </section>
+          
           
         </div>
       </div>
