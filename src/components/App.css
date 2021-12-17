@@ -1,0 +1,126 @@
+/* .app {
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 1s ease-in;
+}
+
+.app__header,
+.app__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/*  Search bar */
+
+/* Current weather */
+
+/* div {
+  border: 5px solid red;
+} */
+
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #9ccef4;
+}
+
+
+
+header{
+  
+  background-color: #759eda;
+  padding: 20px 40px;
+}
+
+form{
+  display: flex;
+  gap: 20px;
+}
+
+header form button{
+  font-size: 1.2em;
+  background-color:#5879c7;
+  border: none;
+  padding: 10px;
+}
+
+main p, form input ,form input::placeholder{
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  
+}
+
+bold{
+  font-weight: 600;
+}
+
+form input:focus{
+  outline: none;
+  border-bottom: 0.5px solid black;
+}
+
+main{
+  text-align: center;
+  line-height: 2.5rem;
+  word-spacing: .5rem;
+}
+.card img{
+  width: 200px;
+  height: auto;
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.cards{
+  text-align: center;
+  min-width: 150px;
+}
+
+.cards p{
+  margin: 0;
+}
+
+.cards img{
+  width: 75px;
+  height: auto;
+}
+
+@media screen and (max-width: 850px) {
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cards{
+    margin-bottom: 50px;
+  }
+
+  .cards::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding: .5px 0;
+    margin: 50px auto 0;
+    background-color: gray;
+    }
+}
