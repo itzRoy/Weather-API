@@ -1,7 +1,5 @@
 import React from "react";
 
-import clear from '../img/weather-icons/clear.svg';
-import partlycloudy from '../img/weather-icons/partlycloudy.svg';
 
 // class Day extends React.Component{
 //     render(){
